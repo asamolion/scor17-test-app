@@ -1,6 +1,5 @@
 import { connect } from 'react-redux';
 import InputField from './InputField';
-import { bindActionCreators } from 'redux';
 
 function mapStateToProps(state) {
   return {
@@ -8,12 +7,4 @@ function mapStateToProps(state) {
   };
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    userNameInput: name => {
-      dispatch({ type: 'USER_NAME_INPUT', name })
-    }
-  };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(InputField);
+export default connect(mapStateToProps, null)(InputField);

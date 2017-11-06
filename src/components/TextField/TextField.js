@@ -1,8 +1,9 @@
-import React from "react";
+import React from 'react';
+import './TextField.css';
 
 class TextField extends React.Component {
   render() {
-    return <p>{this.props.name}</p>;
+    return <p className="name">{this.props.name}</p>;
   }
 }
 

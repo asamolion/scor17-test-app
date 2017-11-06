@@ -4,7 +4,7 @@ const initialState = {
 
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'PROCESS_NAME':
+    case 'USER_NAME_INPUT':
       action.name = action.name.replace(/e/g, 'k');
       return Object.assign({}, state, {
         name: action.name
